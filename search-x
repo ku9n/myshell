@@ -1,0 +1,12 @@
+#!/bin/bash
+IFS=:
+for folder in /home/ku9n/scripts/*
+do
+for file in $folder
+do
+if [ -x $file ]
+then
+echo "This is: $file"
+fi
+done
+done

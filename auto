@@ -1,0 +1,6 @@
+#!/bin/bash
+sudo -S apt-get update
+sudo -S apt-get upgrade -y 
+sudo -S apt-get dist-upgrade -y
+sudo -S apt-get install -y
+
