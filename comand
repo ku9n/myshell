@@ -1,0 +1,5 @@
+java -XshowSettings:properties -version 2>&1 > /dev/null | grep 'java.home' # find JAVAHOME
+
+ps axo user --no-heading | sort | uniq -c # отобразить кол-во процессов от определенного юзера
+
+dpkg-query -W -f='${Package} ${Installed-Size}\n' | awk '{s+=$2} END {print "TotalSize:",(s/1024000),"Gb"}' # отобразить размер пакетов
